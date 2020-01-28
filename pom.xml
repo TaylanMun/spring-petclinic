@@ -42,7 +42,6 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:TaylanMun/spring-petclinic.git</developerConnection>
-        <tag>spring-petclinic-0.0.3</tag>
   </scm>
 
 </project>
