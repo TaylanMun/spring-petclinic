@@ -1,6 +1,6 @@
 package taylan.mun.spring5webapp.model;
 
-public class Person {
+public class Person extends BaseEntity {
     private String firstName;
     private String lastName;
 
