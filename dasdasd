@@ -1,0 +1,60 @@
+[33mtag spring-petclinic-0.0.3[m
+Tagger: taylanmun <tmun@maritimetrainer>
+Date:   Tue Jan 28 13:21:08 2020 +0300
+
+[maven-release-plugin] copy for tag spring-petclinic-0.0.3
+
+[33mcommit ef6b5e664816120a4c03330bc7e9573970c18e5a[m[33m ([m[1;33mtag: spring-petclinic-0.0.3[m[33m)[m
+Author: taylanmun <tmun@maritimetrainer>
+Date:   Tue Jan 28 12:57:29 2020 +0300
+
+    fixed
+
+[1mdiff --git a/pet-clinic-data/pom.xml b/pet-clinic-data/pom.xml[m
+[1mindex 757aec6..32e5fef 100644[m
+[1m--- a/pet-clinic-data/pom.xml[m
+[1m+++ b/pet-clinic-data/pom.xml[m
+[36m@@ -3,7 +3,7 @@[m
+     <parent>[m
+         <artifactId>spring-petclinic</artifactId>[m
+         <groupId>taylan.springframework</groupId>[m
+[31m-        <version>0.0.3</version>[m
+[32m+[m[32m        <version>0.0.3-SNAPSHOT</version>[m
+     </parent>[m
+ [m
+     <modelVersion>4.0.0</modelVersion>[m
+[1mdiff --git a/pet-clinic-web/pom.xml b/pet-clinic-web/pom.xml[m
+[1mindex b3d521b..785cebe 100644[m
+[1m--- a/pet-clinic-web/pom.xml[m
+[1m+++ b/pet-clinic-web/pom.xml[m
+[36m@@ -3,7 +3,7 @@[m
+     <parent>[m
+         <artifactId>spring-petclinic</artifactId>[m
+         <groupId>taylan.springframework</groupId>[m
+[31m-        <version>0.0.3</version>[m
+[32m+[m[32m        <version>0.0.3-SNAPSHOT</version>[m
+     </parent>[m
+ [m
+     <modelVersion>4.0.0</modelVersion>[m
+[36m@@ -14,7 +14,7 @@[m
+         <dependency>[m
+             <artifactId>pet-clinic-data</artifactId>[m
+             <groupId>taylan.springframework</groupId>[m
+[31m-            <version>0.0.3</version>[m
+[32m+[m[32m            <version>0.0.3-SNAPSHOT</version>[m
+         </dependency>[m
+         <dependency>[m
+             <groupId>org.springframework.boot</groupId>[m
+[1mdiff --git a/pom.xml b/pom.xml[m
+[1mindex 12aeb95..0bd6526 100644[m
+[1m--- a/pom.xml[m
+[1m+++ b/pom.xml[m
+[36m@@ -15,7 +15,7 @@[m
+     </parent>[m
+     <groupId>taylan.springframework</groupId>[m
+     <artifactId>spring-petclinic</artifactId>[m
+[31m-    <version>0.0.3</version>[m
+[32m+[m[32m    <version>0.0.3-SNAPSHOT</version>[m
+     <name>spring-petclinic</name>[m
+     <description>Spring Framework Pet Clinic Project</description>[m
+ [m
