@@ -1,4 +1,4 @@
-package springpetclinic;
+package taylan.mun.spring5webapp;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
