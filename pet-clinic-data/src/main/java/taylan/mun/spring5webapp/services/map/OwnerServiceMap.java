@@ -1,11 +1,14 @@
 package taylan.mun.spring5webapp.services.map;
 
+import org.springframework.stereotype.Service;
 import taylan.mun.spring5webapp.model.Owner;
 import taylan.mun.spring5webapp.services.OwnerService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
+
     @Override
     public Set<Owner> findAll() {
         return super.findAll();

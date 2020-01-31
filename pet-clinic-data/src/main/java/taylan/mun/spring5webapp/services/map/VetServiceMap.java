@@ -1,10 +1,12 @@
 package taylan.mun.spring5webapp.services.map;
 
+import org.springframework.stereotype.Service;
 import taylan.mun.spring5webapp.model.Vet;
 import taylan.mun.spring5webapp.services.VetService;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
