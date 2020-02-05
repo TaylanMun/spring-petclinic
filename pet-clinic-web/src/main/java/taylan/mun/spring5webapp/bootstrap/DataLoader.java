@@ -1,14 +1,14 @@
 package taylan.mun.spring5webapp.bootstrap;
 
-import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import taylan.mun.spring5webapp.model.Owner;
 import taylan.mun.spring5webapp.model.Vet;
 import taylan.mun.spring5webapp.services.OwnerService;
 import taylan.mun.spring5webapp.services.VetService;
-import taylan.mun.spring5webapp.services.map.OwnerServiceMap;
-import taylan.mun.spring5webapp.services.map.VetServiceMap;
+//import taylan.mun.spring5webapp.services.map.OwnerServiceMap;
+//import taylan.mun.spring5webapp.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
