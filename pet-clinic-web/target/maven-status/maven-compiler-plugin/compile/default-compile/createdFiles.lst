@@ -1,1 +1,5 @@
+taylan\mun\spring5webapp\controllers\IndexController.class
 taylan\mun\spring5webapp\Spring5webappApplication.class
+taylan\mun\spring5webapp\controllers\OwnerController.class
+taylan\mun\spring5webapp\controllers\VetController.class
+taylan\mun\spring5webapp\bootstrap\DataLoader.class
