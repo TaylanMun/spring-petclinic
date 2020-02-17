@@ -1,5 +1,6 @@
 package taylan.mun.spring5webapp.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import taylan.mun.spring5webapp.model.Visit;
 import taylan.mun.spring5webapp.services.CrudService;
@@ -8,6 +9,7 @@ import taylan.mun.spring5webapp.services.VisitService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
     @Override

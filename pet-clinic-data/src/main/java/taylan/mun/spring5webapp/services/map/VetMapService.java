@@ -1,5 +1,6 @@
 package taylan.mun.spring5webapp.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import taylan.mun.spring5webapp.model.Speciality;
 import taylan.mun.spring5webapp.model.Vet;
@@ -9,6 +10,7 @@ import taylan.mun.spring5webapp.services.VetService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
 
     private final SpecialtyService specialtyService;
