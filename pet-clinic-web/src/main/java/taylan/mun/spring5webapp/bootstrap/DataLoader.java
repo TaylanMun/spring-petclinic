@@ -5,10 +5,7 @@ package taylan.mun.spring5webapp.bootstrap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import taylan.mun.spring5webapp.model.*;
-import taylan.mun.spring5webapp.services.OwnerService;
-import taylan.mun.spring5webapp.services.PetTypeService;
-import taylan.mun.spring5webapp.services.SpecialtyService;
-import taylan.mun.spring5webapp.services.VetService;
+import taylan.mun.spring5webapp.services.*;
 
 import java.time.LocalDate;
 //import taylan.mun.spring5webapp.services.map.OwnerServiceMap;
@@ -21,12 +18,14 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialtyService specialtyService;
+    private final VisitService visitService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialtyService specialtyService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialtyService specialtyService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialtyService = specialtyService;
+        this.visitService = visitService;
     }
 
     @Override
@@ -92,6 +91,13 @@ public class DataLoader implements CommandLineRunner {
         owner2.getPets().add(fionasCat);
 
         ownerService.save(owner2);
+
+        Visit catVisit = new Visit();
+        catVisit.setPet(fionasCat);
+        catVisit.setDate(LocalDate.now());
+        catVisit.setDescription("Sneezy Kitty");
+
+        visitService.save(catVisit);
 
         System.out.println("Loaded Owners...");
 
