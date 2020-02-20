@@ -1,9 +1,23 @@
 version: 2.1
 
 orbs:
-  maven: circleci/maven@0.0.12
-
+  mvn: scx/mvn@1
 workflows:
-  maven_test:
+  build_test_publish:
     jobs:
-      - maven/test # checkout, build, test, and upload test results
+      - mvn/build:
+          context: scx-credentials
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              only: /.*/
+      - mvn/publish:
+          context: scx-credentials
+          requires:
+            - mvn/build
+          filters:
+            tags:
+              only: /^release-(.+)$/
+            branches:
+              ignore: /.*/
