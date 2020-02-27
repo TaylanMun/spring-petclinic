@@ -4,7 +4,6 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import taylan.mun.spring5webapp.model.Owner;
 import taylan.mun.spring5webapp.model.Pet;
-import taylan.mun.spring5webapp.model.PetType;
 import taylan.mun.spring5webapp.services.OwnerService;
 import taylan.mun.spring5webapp.services.PetService;
 import taylan.mun.spring5webapp.services.PetTypeService;
