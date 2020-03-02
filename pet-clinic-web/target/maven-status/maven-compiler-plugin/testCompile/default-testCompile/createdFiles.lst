@@ -1,4 +1,5 @@
 taylan\mun\spring5webapp\SpringPetclinicApplicationTests.class
-guru\springframework\sfgpetclinic\controllers\OwnerControllerTest.class
+taylan\mun\spring5webapp\controllers\OwnerControllerTest.class
+taylan\mun\spring5webapp\controllers\PetControllerTest.class
 taylan\mun\spring5webapp\services\springdatajpa\OwnerSDJpaServiceTest.class
 taylan\mun\spring5webapp\services\map\OwnerMapServiceTest.class

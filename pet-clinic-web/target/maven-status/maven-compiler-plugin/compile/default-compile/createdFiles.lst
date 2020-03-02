@@ -1,5 +1,8 @@
+taylan\mun\spring5webapp\controllers\VisitController.class
 taylan\mun\spring5webapp\controllers\IndexController.class
 taylan\mun\spring5webapp\Spring5webappApplication.class
+taylan\mun\spring5webapp\controllers\PetController.class
 taylan\mun\spring5webapp\controllers\OwnerController.class
 taylan\mun\spring5webapp\controllers\VetController.class
 taylan\mun\spring5webapp\bootstrap\DataLoader.class
+taylan\mun\spring5webapp\formatters\PetTypeFormatter.class
