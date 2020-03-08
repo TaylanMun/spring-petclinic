@@ -11,6 +11,8 @@ import taylan.mun.spring5webapp.services.PetService;
 import taylan.mun.spring5webapp.services.VisitService;
 
 import javax.validation.Valid;
+import java.beans.PropertyEditorSupport;
+import java.time.LocalDate;
 
 @Controller
 public class VisitController {
@@ -24,8 +26,15 @@ public class VisitController {
     }
 
     @InitBinder
-    public void setAllowedFields(WebDataBinder dataBinder) {
+    public void dataBinder(WebDataBinder dataBinder) {
         dataBinder.setDisallowedFields("id");
+
+        dataBinder.registerCustomEditor(LocalDate.class, new PropertyEditorSupport() {
+            @Override
+            public void setAsText(String text) throws IllegalArgumentException{
+                setValue(LocalDate.parse(text));
+            }
+        });
     }
 
     @ModelAttribute("visit")
@@ -50,8 +59,9 @@ public class VisitController {
         if (result.hasErrors()) {
             return "pets/createOrUpdateVisitForm";
         } else {
-            Visit savedVisit = visitService.save(visit);
-            return "redirect:/owners/" + savedVisit.getId();
+            visitService.save(visit);
+            return "redirect:/owners/{ownerId}";
+
         }
     }
 
